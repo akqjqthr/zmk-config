@@ -173,12 +173,13 @@
 
 &mmv {
     delay-ms = <0>;
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <200>;
 };
 
-&mwh {
+&msc {
     delay-ms = <0>;
     acceleration-exponent=<1>;
+    time-to-max-speed-ms = <300>;
 };
 
 / {
@@ -200,8 +201,8 @@
 		nav_layer {
 			bindings = <
 &trans         &trans         &trans         &trans          &trans          &trans                                                 &trans              &trans              &trans             &trans            &trans              &trans
-&kp CAPS       &trans         &mkp MCLK      &mkp RCLK       &mkp LCLK       &mwh SCROLL_UP                                         &mwh SCROLL_UP      &mwh SCROLL_LEFT    &mmv MOVE_UP       &mwh SCROLL_RIGHT &kp C_AC_FORWARD    &trans
-&trans         &mcr_all       &kp LALT       &kp LCTRL       &kp LSHFT       &mwh SCROLL_DOWN                                       &mwh SCROLL_DOWN    &mmv MOVE_LEFT      &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp C_AC_BACK       &trans
+&kp CAPS       &trans         &mkp MCLK      &mkp RCLK       &mkp LCLK       &msc SCROLL_UP                                         &msc SCROLL_UP      &mwh SCROLL_LEFT    &mmv MOVE_UP       &mwh SCROLL_RIGHT &kp C_AC_FORWARD    &trans
+&trans         &mcr_all       &kp LALT       &kp LCTRL       &kp LSHFT       &msc SCROLL_DOWN                                       &msc SCROLL_DOWN    &mmv MOVE_LEFT      &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp C_AC_BACK       &trans
 &trans         &mcr_undo      &mcr_cut       &mcr_copy       &mcr_paste      &mcr_redo         &trans            &trans             &kp HOME            &kp LEFT            &kp DOWN           &kp UP            &kp RIGHT           &kp END
                                              &trans          &trans          &kp SPACE         &trans            &trans             &kp BSPC            &mkp LCLK           &mkp RCLK
 			>;
