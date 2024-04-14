@@ -195,8 +195,8 @@
 			bindings = <
 &lt SYS GRAVE   &kp N1         &kp N2         &kp N3          &kp N4         &kp N5                                                &kp N6              &kp N7               &kp N8             &kp N9             &kp N0               &td0
 &kp TAB         &kp Q          &kp W          &kp E           &kp R          &kp T                                                 &kp Y               &kp U                &kp I              &kp O              &kp P                &td1
-&hm2 LCTL LEFT  &hm4 LGUI A    &hm3 LALT S    &hm3 LCTL D     &hm2 LSFT F    &kp G                                                 &kp H               &hm1 LSFT J          &hm3 LCTL K        &hm3 LALT L        &hm4 LGUI SEMI       &td2
-&hm2 LSFT RIGHT &kp Z          &kp X          &kp C           &kp V          &kp B             &kp LBKT          &kp RBKT          &kp N               &kp M                &kp COMMA          &kp DOT            &td3                 &hm2 LSFT RIGHT
+&hm1 LCTL LEFT  &hm4 LGUI A    &hm3 LALT S    &hm3 LCTL D     &hm2 LSFT F    &kp G                                                 &kp H               &hm1 LSFT J          &hm3 LCTL K        &hm3 LALT L        &hm4 LGUI SEMI       &td2
+&hm1 LSFT RIGHT &kp Z          &kp X          &kp C           &kp V          &kp B             &kp LBKT          &kp RBKT          &kp N               &kp M                &kp COMMA          &kp DOT            &td3                 &hm1 LSFT RIGHT
                                               &kp LGUI       &hm4 LALT ESC   &lt NAV SPACE     &lt NUM TAB       &lt FNC RET       &lt NAV BSPC        &lt SYS DEL          &kp RALT
 			>;
 
@@ -209,7 +209,7 @@
 &kp CAPS       &trans         &mkp MCLK      &mkp RCLK       &mkp LCLK       &msc SCRL_UP                                           &msc SCRL_UP        &msc SCRL_LEFT      &mmv MOVE_UP       &msc SCRL_RIGHT   &kp C_AC_FORWARD    &trans
 &trans         &mcr_all       &kp LALT       &kp LCTRL       &kp LSHFT       &msc SCRL_DOWN                                         &msc SCRL_DOWN      &mmv MOVE_LEFT      &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp C_AC_BACK       &trans
 &trans         &mcr_undo      &mcr_cut       &mcr_copy       &mcr_paste      &mcr_redo         &trans            &trans             &kp HOME            &kp LEFT            &kp DOWN           &kp UP            &kp RIGHT           &kp END
-                                             &trans          &trans          &kp SPACE         &trans            &trans             &kp BSPC            &mkp LCLK           &mkp RCLK
+                                             &trans          &trans          &kp SPACE         &trans            &mkp LCLK          &kp BSPC            &mkp RCLK           &mkp RCLK
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -244,7 +244,7 @@
 &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                           &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3      &bt BT_SEL 4        &bt BT_CLR
 &trans         &out OUT_USB   &out OUT_BLE   &bt BT_PRV      &bt BT_NXT      &trans                                                 &trans              &trans              &trans             &trans            &trans              &trans
 &trans    &ext_power EP_ON &ext_power EP_OFF &trans          &trans          &trans                                                 &trans              &trans              &trans             &trans            &trans              &trans
-&trans         &trans         &trans         &trans          &trans          &reset            &bt BT_CLR_ALL    &bt BT_CLR_ALL     &reset              &kp C_PREV          &kp C_PP           &kp C_STOP        &kp C_NEXT             &trans
+&trans         &trans         &trans         &trans          &trans          &trans            &bt BT_CLR_ALL    &bt BT_CLR_ALL     &trans              &kp C_PREV          &kp C_PP           &kp C_STOP        &kp C_NEXT          &trans
                                              &trans          &trans          &trans            &trans            &trans             &trans              &trans              &trans
 			>;
 
